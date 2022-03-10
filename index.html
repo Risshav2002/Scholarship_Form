@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<!-- name: what is send to the backend, id is used to label -->
+ 
+<body>
+    <h2>Scholarship Form</h2>
+    <form action="backend.php">
+        <label for="name">Name :</label>
+        <!-- It should be same as id of input -->
+        <input type="text" name="myName" id="name">
+        <div></div>
+        <br>
+        <div>
+            Marks : <input type="text" name="myMarks">
+        </div>
+        <br>
+        <div>
+            Email : <input type="text" name="myEmail">
+        </div>
+        <br>
+
+        <div>
+            Date : <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Scholarship : <input type="number" name="myScholarship">
+        </div>
+        <br>
+        <div>
+            Are u eligible ? <input type="checkbox" name="myEligiblity" checked>
+        </div>
+        <br>
+        <div>
+            Gender : <br> Male :<input type="radio" name="myGender">
+            <br>
+            Female :<input type="radio" name="myGender">
+            <br>
+            Trans :<input type="radio" name="myGender">
+
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Category</label>
+            <select name="myCategory" id="Category">
+                <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC/ST">SC/ST</option>
+            </select>
+        </div>
+
+
+        <br>
+        <div>
+            Describe that why do u need a scholarship:
+            <br>
+            <textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset now">
+
+        </div>
+    </form>
+</body>
+
+</html>
